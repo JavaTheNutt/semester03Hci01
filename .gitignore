@@ -3,4 +3,4 @@
 /test/
 /tests/
 /*.scss/
-/.idea/**/*.*/
+/.idea/
