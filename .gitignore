@@ -2,5 +2,7 @@
 /node_modules/
 /test/
 /tests/
-/*.scss/
+/src/styles/*.scss/
 /.idea/
+/src/js/*.js/
+/src/app.js/
