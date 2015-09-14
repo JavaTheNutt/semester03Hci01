@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="styles/main.css">
     <title>TestSite</title>
 </head>
-<body>
-    <button class="btn btn-danger">Click me</button><br>
-    <p class="para">Hello, World!</p>
+<body ng-app="myApp">
+    <div ng-include="'partials/templates/nav.html'"></div>
+    <div class="container">
+        <div ui-view></div>
+    </div>
 <script src="build/js/application-deps.js"></script>
 <script src="build/js/application.js"></script>
 </body>
