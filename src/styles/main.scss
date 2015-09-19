@@ -1,22 +1,11 @@
-$color : red;
+$backgroundColor : #FFF6AE;
+$containerColor : white;
+$headerFont01: "Allerta Stencil";
+$headerFontColor: red;
+
+@import "jumbotron";
+@import "home";
+
 body{
-  div.container{
-    div.homePage{
-      div.textAreaOuter{
-        display: block;
-        heigth: 200px;
-        width: 100%;
-        padding-bottom: 10px;
-        .testText{
-          resize: vertical;
-        }
-      }
-      button.showAnswer{
-        position: relative;
-      }
-      pre.hiddenTestAnswer{
-          visibility: hidden;
-      }
-    }
-  }
+  background-color: $backgroundColor;
 }

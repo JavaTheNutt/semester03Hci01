@@ -2,16 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--Fonts-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crafty+Girls" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Allerta+Stencil" />
+    <!--Vendor Styles
+    Bootstrap, Bootstrap-Theme-->
     <link rel="stylesheet" href="build/styles/application-style.css">
+    <!--Developer Styles-->
     <link rel="stylesheet" href="styles/main.css">
     <title>TestSite</title>
 </head>
 <body ng-app="myApp">
-    <div ng-include="'partials/templates/nav.html'"></div>
+<div ng-include="'partials/templates/nav.html'"></div>
     <div class="container">
-        <div ui-view></div>
+        <!--Navbar-->
+        <div class="container">
+            <!--Jumbotron-->
+            <div ng-include="'partials/templates/jumbotron.html'"></div>
+        </div>
+        <div class="container">
+            <!--Views go here-->
+            <div ui-view></div>
+        </div>
     </div>
+    <div ng-include="'partials/templates/footer.html'"></div>
+<!--Vendor Scripts
+Bootstrap, JQuery, Angular, Angular-Ui-Router-->
 <script src="build/js/application-deps.js"></script>
+<!--Developer Scripts-->
 <script src="build/js/application.js"></script>
 </body>
 </html>

@@ -3,7 +3,6 @@
 /test/
 /tests/
 /src/styles/*.scss/
-/.idea/
+/.idea/*.xml/
 /src/js/*.js/
 /src/app.js/
-/*.xml/

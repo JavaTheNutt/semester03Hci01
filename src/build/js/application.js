@@ -8,26 +8,23 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
             url: '/',
             templateUrl: 'partials/views/home.html'
         })
+        .state('javascript', {
+            url: '/javascript',
+            template: '<p>JavaScript</p>'
+        })
+        .state('css', {
+            url: '/css',
+            template: '<p>CSS</p>'
+        })
+        .state('html', {
+            url: '/html',
+            template: '<p>HTML</p>'
+        })
         .state('about', {
             url: '/about',
-            template: '<p>About</p>'
-        })
-        .state('profile', {
-            url: '/profile',
-            template: '<p>Profile</p>'
-        })
-        .state('contact', {
-            url: '/contact',
-            template: '<p>Contact</p>'
+            templateUrl: 'partials/views/about.html>'
         });
 }]);
 
 
 
-app.controller('HomeCtrl', ['$scope', function ($scope) {
-    $('.showAnswer').click(function () {
-        console.log('test');
-        $('#testAnswer').removeClass('hiddenTestAnswer');
-    });
-    $scope.name = 'Joe';
-}]);
