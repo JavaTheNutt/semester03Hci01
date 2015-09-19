@@ -10,20 +10,28 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
         })
         .state('javascript', {
             url: '/javascript',
-            template: '<p>JavaScript</p>'
+            templateUrl: 'partials/views/javascript.html'
         })
         .state('css', {
             url: '/css',
-            template: '<p>CSS</p>'
+            templateUrl: 'partials/views/css.html'
         })
         .state('html', {
             url: '/html',
-            template: '<p>HTML</p>'
+            templateUrl: 'partials/views/html.html'
         })
         .state('about', {
             url: '/about',
-            templateUrl: 'partials/views/about.html>'
-        });
+            templateUrl: 'partials/views/about.html'
+        })
+        .state('disclaimer', {
+            url: '/disclaimer',
+            templateUrl: 'partials/views/disclaimer.html'
+        })
+        .state('contact', {
+            url: '/contact',
+            templateUrl: 'partials/views/contact.html'
+        })
 }]);
 
 

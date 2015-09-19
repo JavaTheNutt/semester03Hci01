@@ -1,0 +1,22 @@
+div.viewContainer.container{
+  div.row{
+    div.col-md-6{
+      form#contactForm{
+        div.form-group{
+          label.control-label{
+            font-family: $pageFont;
+          }
+          div#textareaDiv{
+            textarea#messageInput{
+              resize: vertical;
+            }
+          }
+        }
+      }
+      p.textBesideForm{
+        font-family: $pageFont;
+        font-size: $pageFontSize;
+      }
+    }
+  }
+}

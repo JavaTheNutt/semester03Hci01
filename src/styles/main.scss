@@ -1,11 +1,33 @@
-$backgroundColor : #FFF6AE;
+$backgroundColor : #fff3a4;
 $containerColor : white;
 $headerFont01: "Allerta Stencil";
-$headerFontColor: red;
+$jumboFont01: 'Crafty Girls', cursive, sans-serif;
+$pageFont : 'Amaranth';
+$pageFontSize: 1.2em;
+$pageTextPadding: 15px;
+$headerFontColor: #08b41f;
 
 @import "jumbotron";
 @import "home";
+@import "about";
+@import "contact";
 
 body{
   background-color: $backgroundColor;
+  div.viewContainer{
+    background-color: $containerColor;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    h2.homeHeader{
+      font-family: $headerFont01;
+      color : $headerFontColor;
+    }
+    div.pageText{
+      padding: $pageTextPadding;
+      font-family: $pageFont;
+      font-size: $pageFontSize;
+    }
+  }
+
 }
