@@ -1,7 +1,10 @@
-$backgroundColor : #fff3a4;
-$containerColor : white;
+$backgroundColor : #b6ecff;
+/*$backgroundColor : #fff3a4;*/
+$containerColor : #fff;
+$containerBorder: solid grey 3px;
 $headerFont01: "Allerta Stencil";
 $jumboFont01: 'Crafty Girls', cursive, sans-serif;
+$jumboFontSize: 4.5em;
 $pageFont : 'Amaranth';
 $pageFontSize: 1.2em;
 $pageTextPadding: 15px;
@@ -11,6 +14,7 @@ $headerFontColor: #08b41f;
 @import "home";
 @import "about";
 @import "contact";
+@import "html";
 
 body{
   background-color: $backgroundColor;
@@ -22,6 +26,7 @@ body{
     h2.homeHeader{
       font-family: $headerFont01;
       color : $headerFontColor;
+      font-size: 3em;
     }
     div.pageText{
       padding: $pageTextPadding;

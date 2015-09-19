@@ -1,3 +1,37 @@
-<div class="viewContainer">
+<div class="viewContainer htmlPage">
+    <div class="container-fluid">
+        <div ng-include="'partials/templates/htmlNav.html'"></div>
+    </div>
     <h2 class="homeHeader">HTML</h2>
+    <div class="row">
+        <div class="pageText col-sm-6 col-sm-offset-1">
+            <h3 class="subHeader text-center">About HTML</h3>
+            <p>
+                HTML is the backbone of the Web. HTML stands for <strong>Hyper Text Markup Language</strong>. It is used to display information on a web page. It is used for placement of data on a page.
+                The current version of HTML is HTML5. This is what will be shown here.
+            </p>
+            <p>
+                HTML is written between what are called <strong>tags</strong>. A set of tags looks like this: &lttag name here&gt. Examples of
+                tags would be &ltp&gt, &ltbr&gt and &lth1&gt
+            </p>
+            <p>
+                Most tags come in pairs. Whenever a tag that works as part of pair is opened, the equivalent closing tag must be inserted. To close
+                a tag you simply need to put the tag name with a forward slash(/) before it, like this: &lth1&gtSome text here&lt/h1&gt.
+            </p>
+            <p>
+                Some tags do not need to be closed. We call these <strong>empty tags</strong>. Examples of empty tags are: &ltbr&gt, &lthr&gt, &ltimg&gt
+                and &ltinput&gt.
+            </p>
+            <p>
+                Another example of an empty tag is &lt!DOCTYPE html&gt. This is a very special tag that is placed at the very top of each HTML page.
+                This specifies to the browser that the HTML used is HTML5.
+            </p>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+            <div class="htmlMenu">
+                <a class="btn btn-success" ui-sref="setup">Setup</a><br>
+                <a class="btn btn-success" ui-sref="basic">Basic Tags</a>
+            </div>
+        </div>
+    </div>
 </div>

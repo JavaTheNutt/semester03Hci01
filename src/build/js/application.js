@@ -32,7 +32,19 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
             url: '/contact',
             templateUrl: 'partials/views/contact.html'
         })
+        .state('references', {
+            url: '/references',
+            templateUrl: 'partials/views/references.html'
+        })
 }]);
 
 
+
+app.controller('ContactCtrl', ['$scope', function ($scope) {
+    $scope.messageSent = false;
+    $scope.sendMessage = function(){
+        $scope.messageSent = true;
+    }
+
+}]);
 

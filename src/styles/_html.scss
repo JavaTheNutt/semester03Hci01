@@ -1,0 +1,27 @@
+div.viewContainer.htmlPage{
+  div.container-fluid{
+    div.ng-scope{
+      div.htmlNavbar{
+        width: 100%;
+        position: relative;
+        border-radius: 40px;
+      }
+    }
+  }
+  div.row{
+    div.pageText{
+      padding: $pageTextPadding;
+    }
+    div.col-sm-3{
+      padding: 5px;
+      div.htmlMenu{
+        border: $containerBorder;
+        border-radius: 25px;
+
+        a{
+          margin: 5px;
+        }
+      }
+    }
+  }
+}

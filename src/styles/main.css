@@ -1,8 +1,10 @@
+/*$backgroundColor : #fff3a4;*/
 div.jumbotron {
   font-family: "Crafty Girls", cursive, sans-serif;
   text-align: center;
-  background-color: white; }
+  background-color: #fff; }
   div.jumbotron h1.jumboHeader {
+    font-size: 4.5em;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
     div.jumbotron h1.jumboHeader span#jumboRed {
       color: red; }
@@ -27,16 +29,31 @@ div.viewContainer.container div.row div.col-md-6 p.textBesideForm {
   font-family: "Amaranth";
   font-size: 1.2em; }
 
+div.viewContainer.htmlPage div.container-fluid div.ng-scope div.htmlNavbar {
+  width: 100%;
+  position: relative;
+  border-radius: 40px; }
+div.viewContainer.htmlPage div.row div.pageText {
+  padding: 15px; }
+div.viewContainer.htmlPage div.row div.col-sm-3 {
+  padding: 5px; }
+  div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu {
+    border: solid grey 3px;
+    border-radius: 25px; }
+    div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu a {
+      margin: 5px; }
+
 body {
-  background-color: #fff3a4; }
+  background-color: #b6ecff; }
   body div.viewContainer {
-    background-color: white;
+    background-color: #fff;
     text-align: center;
     border-radius: 20px;
     margin-bottom: 100px; }
     body div.viewContainer h2.homeHeader {
       font-family: "Allerta Stencil";
-      color: #08b41f; }
+      color: #08b41f;
+      font-size: 3em; }
     body div.viewContainer div.pageText {
       padding: 15px;
       font-family: "Amaranth";
