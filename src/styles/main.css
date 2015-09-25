@@ -29,10 +29,8 @@ div.viewContainer.container div.row div.col-md-6 p.textBesideForm {
   font-family: "Amaranth";
   font-size: 1.2em; }
 
-div.viewContainer.htmlPage div.container-fluid div.ng-scope div.htmlNavbar {
-  width: 100%;
-  position: relative;
-  border-radius: 40px; }
+div.viewContainer.htmlPage h2.homeHeader {
+  margin: 20px; }
 div.viewContainer.htmlPage div.row div.pageText {
   padding: 15px; }
 div.viewContainer.htmlPage div.row div.col-sm-3 {
@@ -51,6 +49,7 @@ body {
     border-radius: 20px;
     margin-bottom: 100px; }
     body div.viewContainer h2.homeHeader {
+      margin: 20px;
       font-family: "Allerta Stencil";
       color: #08b41f;
       font-size: 3em; }

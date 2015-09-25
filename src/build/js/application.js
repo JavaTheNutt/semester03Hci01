@@ -36,6 +36,14 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
             url: '/references',
             templateUrl: 'partials/views/references.html'
         })
+        .state('html_setup', {
+            url: '/html_setup',
+            templateUrl: 'partials/views/html_setup.html'
+        })
+        .state('basic',{
+            url: '/basic',
+            templateUrl: 'partials/views/basic_html.html'
+        })
 }]);
 
 
@@ -48,3 +56,8 @@ app.controller('ContactCtrl', ['$scope', function ($scope) {
 
 }]);
 
+
+
+$(document).ready(function () {
+    $('#accordion').accordion();
+});
