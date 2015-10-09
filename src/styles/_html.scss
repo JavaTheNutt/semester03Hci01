@@ -1,11 +1,23 @@
 div.viewContainer.htmlPage{
-  h2.homeHeader{
-    margin: 20px;
-  }
+  padding: 50px;
   div.row{
+    /*This is the 6 column div with the content*/
     div.pageText{
-      padding: $pageTextPadding;
+      /*SubHeader*/
+      h3.subHeader{
+        font-family: "Allerta Stencil", cursive, sans-serif;
+        color: $headerFontColor;
+      }
+      h4.underHeader{
+        color: $headerFontColor;
+        text-align: left;
+      }
+      pre.htmlExample{
+        text-align: left;
+      }
     }
+    /*Navbar at the side of the pages contained within the
+    * html section of the site.*/
     div.col-sm-3{
       padding: 5px;
       div.ngScope{

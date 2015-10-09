@@ -37,12 +37,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
             templateUrl: 'partials/views/references.html'
         })
         .state('html_setup', {
-            url: '/html_setup',
+            url: '/html/setup',
             templateUrl: 'partials/views/html_setup.html'
         })
-        .state('basic',{
-            url: '/basic',
+        .state('basics',{
+            url: '/html/basics',
             templateUrl: 'partials/views/basic_html.html'
+        })
+        .state('layout', {
+            url: '/html/layout',
+            templateUrl: 'partials/views/html_layout.html'
         })
 }]);
 

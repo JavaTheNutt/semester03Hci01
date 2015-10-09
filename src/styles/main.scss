@@ -1,28 +1,31 @@
-$backgroundColor : #b6ecff;
+$backgroundColor : #ff2416;
 /*$backgroundColor : #fff3a4;*/
 $containerColor : #fff;
-$containerBorder: solid grey 3px;
+$containerBorder: ridged $backgroundColor 3px;
 $headerFont01: "Allerta Stencil";
 $jumboFont01: 'Crafty Girls', cursive, sans-serif;
-$jumboFontSize: 4.5em;
+$jumboFontSize: 5em;
 $pageFont : 'Amaranth';
 $pageFontSize: 1.2em;
 $pageTextPadding: 15px;
-$headerFontColor: #08b41f;
+$headerFontColor: #1ab3b4;
 
 @import "jumbotron";
 @import "home";
 @import "about";
 @import "contact";
 @import "html";
+@import "viewContainer";
 
 body{
   background-color: $backgroundColor;
+  background-image: url("../img/congruent_pentagon.png");
   div.viewContainer{
     background-color: $containerColor;
     text-align: center;
     border-radius: 20px;
     margin-bottom: 100px;
+    border: ridged $backgroundColor 4px;
     h2.homeHeader{
       margin: 20px;
       font-family: $headerFont01;

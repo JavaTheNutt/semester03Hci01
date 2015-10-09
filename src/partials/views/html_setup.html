@@ -1,18 +1,20 @@
+<!--This is the page within the html section that has the description of the
+    how to get setup for html design-->
 <div class="viewContainer htmlPage">
-    <h2 class="homeHeader">Setup for Webdesign</h2>
     <div class="row">
+        <!--Content container-->
         <div class="pageText col-sm-6 col-sm-offset-1">
+            <h3 class="subHeader">Setup for HTML</h3>
             <p>
                 In order to begin designing webpages with HTML, no special tools are required. All you need is a text editor(such as Notepad)
-                and a browser (such as Google Chrome). It may be difficult to write your HTML in Notepad but there are lots of free alternatives,
-                such as <a href="https://notepad-plus-plus.org/download/v6.8.3.html" target="_blank">Notepad++</a> and
-                <a href="https://atom.io/" target="_blank">Atom</a>. A good paid alternative is <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a>, which
-                has an unlimited free trial. For a truly professional tool you could try <a href="http://www.adobe.com/ie/products/dreamweaver.html" target="_blank">Dreamweaver</a>
-                or <a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>, but these programs are quite expensive and are really not necessary for beginner designers.
+                and a browser (such as Google Chrome).</p>
+
+            <p> It may be difficult to write your HTML in Notepad but there are lots of free alternatives,
+                such as <a href="https://notepad-plus-plus.org/download/v6.8.3.html" target="_blank">Notepad++</a> ,
+                <a href="https://atom.io/" target="_blank">Atom</a> or <a href="http://www.sublimetext.com/">sublime</a> .
             </p>
             <p>
-                For basic HTML design, any browser will work. Internet Explorer already comes pre-loaded on every Windows machine. Safari is the default browser for OSX. Most Linux distros
-                come with FireFox pre-installed. Any of these defaults will work fine, although Internet Explorer is not fully compatible with all features of HTML5. Good alternatives would be
+                For basic HTML design, any browser will work. I would recommend either
                 <a href="http://www.google.com/chrome/" target="_blank">Google Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozilla FireFox</a>.
             </p>
             <p>
@@ -20,11 +22,21 @@
             </p>
             <p>
                 To test that everything is working correctly, copy the following text into your text editor and save it as index.html (Ensure that the dropdown menu is set to "all files" or html
-                document.
+                document).
+            </p>
+            <pre class="htmlExample">&lt!DOCTYPE html&gt<br>&lthtml&gt<br>    &ltbody&gt<br>        &ltp&gtHello, World&ltp&gt<br>    &lt/body&gt<br>&lt/html&gt
+            </pre>
+            <p>
+                Once you have the file saved, open it with a browser. If you typed it correctly, you should see the words "Hello, World!" printed at the top of the screen.
+            </p>
+            <p>
+                Now you've designed your first website! Congratulations!!
             </p>
         </div>
+        <!--Navbar at the side-->
         <div class="col-sm-3 col-sm-offset-1">
             <div ng-include="'/src/partials/templates/htmlNav.html'"></div>
         </div>
+
     </div>
 </div>

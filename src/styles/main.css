@@ -2,10 +2,17 @@
 div.jumbotron {
   font-family: "Crafty Girls", cursive, sans-serif;
   text-align: center;
-  background-color: #fff; }
+  /*background-image: url("../img/az-subtle.png");*/
+  background-color: white;
+  padding: 5px;
+  border: ridged #ff2416 4px; }
+  div.jumbotron p.jumboSubtitle {
+    /*text-align: right;*/
+    font-size: 2em; }
   div.jumbotron h1.jumboHeader {
-    font-size: 4.5em;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+    font-size: 5em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /*text-align: left;*/ }
     div.jumbotron h1.jumboHeader span#jumboRed {
       color: red; }
     div.jumbotron h1.jumboHeader span#jumboOrange {
@@ -29,29 +36,45 @@ div.viewContainer.container div.row div.col-md-6 p.textBesideForm {
   font-family: "Amaranth";
   font-size: 1.2em; }
 
-div.viewContainer.htmlPage h2.homeHeader {
-  margin: 20px; }
-div.viewContainer.htmlPage div.row div.pageText {
-  padding: 15px; }
-div.viewContainer.htmlPage div.row div.col-sm-3 {
-  padding: 5px; }
-  div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu {
-    border: solid grey 3px;
-    border-radius: 25px; }
-    div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu a {
-      margin: 5px; }
+div.viewContainer.htmlPage {
+  padding: 50px; }
+  div.viewContainer.htmlPage div.row {
+    /*This is the 6 column div with the content*/
+    /*Navbar at the side of the pages contained within the
+    * html section of the site.*/ }
+    div.viewContainer.htmlPage div.row div.pageText {
+      /*SubHeader*/ }
+      div.viewContainer.htmlPage div.row div.pageText h3.subHeader {
+        font-family: "Allerta Stencil", cursive, sans-serif;
+        color: #1ab3b4; }
+      div.viewContainer.htmlPage div.row div.pageText h4.underHeader {
+        color: #1ab3b4;
+        text-align: left; }
+      div.viewContainer.htmlPage div.row div.pageText pre.htmlExample {
+        text-align: left; }
+    div.viewContainer.htmlPage div.row div.col-sm-3 {
+      padding: 5px; }
+      div.viewContainer.htmlPage div.row div.col-sm-3 div.ngScope div.list-group a.list-group-item {
+        background-color: red; }
+      div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu {
+        border: ridged #ff2416 3px;
+        border-radius: 25px; }
+        div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu a {
+          margin: 5px; }
 
 body {
-  background-color: #b6ecff; }
+  background-color: #ff2416;
+  background-image: url("../img/congruent_pentagon.png"); }
   body div.viewContainer {
     background-color: #fff;
     text-align: center;
     border-radius: 20px;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    border: ridged #ff2416 4px; }
     body div.viewContainer h2.homeHeader {
       margin: 20px;
       font-family: "Allerta Stencil";
-      color: #08b41f;
+      color: #1ab3b4;
       font-size: 3em; }
     body div.viewContainer div.pageText {
       padding: 15px;
