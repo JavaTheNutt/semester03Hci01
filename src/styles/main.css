@@ -1,11 +1,10 @@
-/*$backgroundColor : #fff3a4;*/
 div.jumbotron {
   font-family: "Crafty Girls", cursive, sans-serif;
   text-align: center;
-  /*background-image: url("../img/az-subtle.png");*/
+  background-image: url("../img/concrete_seamless.png");
   background-color: white;
   padding: 5px;
-  border: ridged #ff2416 4px; }
+  border: solid #1ab3b4 2px; }
   div.jumbotron p.jumboSubtitle {
     /*text-align: right;*/
     font-size: 2em; }
@@ -45,8 +44,9 @@ div.viewContainer.htmlPage {
     div.viewContainer.htmlPage div.row div.pageText {
       /*SubHeader*/ }
       div.viewContainer.htmlPage div.row div.pageText h3.subHeader {
-        font-family: "Allerta Stencil", cursive, sans-serif;
-        color: #1ab3b4; }
+        font-family: "Permanent Marker";
+        color: #1ab3b4;
+        font-size: 2em; }
       div.viewContainer.htmlPage div.row div.pageText h4.underHeader {
         color: #1ab3b4;
         text-align: left; }
@@ -54,7 +54,7 @@ div.viewContainer.htmlPage {
         text-align: left; }
     div.viewContainer.htmlPage div.row div.col-sm-3 {
       padding: 5px; }
-      div.viewContainer.htmlPage div.row div.col-sm-3 div.ngScope div.list-group a.list-group-item {
+      div.viewContainer.htmlPage div.row div.col-sm-3 div.ngScope div.list-group a:link.list-group-item.active {
         background-color: red; }
       div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu {
         border: ridged #ff2416 3px;
@@ -66,14 +66,15 @@ body {
   background-color: #ff2416;
   background-image: url("../img/congruent_pentagon.png"); }
   body div.viewContainer {
-    background-color: #fff;
+    /*background-color: $containerColor;*/
+    background-image: url("../img/concrete_seamless.png");
     text-align: center;
     border-radius: 20px;
     margin-bottom: 100px;
-    border: ridged #ff2416 4px; }
+    border: solid #1ab3b4 2px; }
     body div.viewContainer h2.homeHeader {
       margin: 20px;
-      font-family: "Allerta Stencil";
+      font-family: "Permanent Marker";
       color: #1ab3b4;
       font-size: 3em; }
     body div.viewContainer div.pageText {

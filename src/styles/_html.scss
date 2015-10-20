@@ -5,8 +5,9 @@ div.viewContainer.htmlPage{
     div.pageText{
       /*SubHeader*/
       h3.subHeader{
-        font-family: "Allerta Stencil", cursive, sans-serif;
+        font-family: $headerFont01;
         color: $headerFontColor;
+        font-size: 2em;
       }
       h4.underHeader{
         color: $headerFontColor;
@@ -22,7 +23,7 @@ div.viewContainer.htmlPage{
       padding: 5px;
       div.ngScope{
         div.list-group{
-          a.list-group-item{
+          a:link.list-group-item.active{
             background-color: red;
           }
         }
