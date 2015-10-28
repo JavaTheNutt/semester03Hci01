@@ -29,6 +29,8 @@ div.jumbotron {
 
 div.viewContainer.container div.row div.col-md-6 form#contactForm div.form-group label.control-label {
   font-family: "Amaranth"; }
+div.viewContainer.container div.row div.col-md-6 form#contactForm div.form-group div.col-sm-9 input#emailInput.contactFormInvalid {
+  border-color: red; }
 div.viewContainer.container div.row div.col-md-6 form#contactForm div.form-group div#textareaDiv textarea#messageInput {
   resize: vertical; }
 div.viewContainer.container div.row div.col-md-6 p.textBesideForm {
@@ -61,6 +63,9 @@ div.viewContainer.htmlPage {
         border-radius: 25px; }
         div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu a {
           margin: 5px; }
+
+.contactFormInvalid {
+  border-color: red; }
 
 body {
   background-color: #ff2416;

@@ -6,6 +6,11 @@ div.viewContainer.container{
           label.control-label{
             font-family: $pageFont;
           }
+          div.col-sm-9{
+            input#emailInput.contactFormInvalid{
+              border-color: red;
+            }
+          }
           div#textareaDiv{
             textarea#messageInput{
               resize: vertical;
