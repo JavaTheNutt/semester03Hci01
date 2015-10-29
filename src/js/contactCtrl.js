@@ -8,15 +8,18 @@ app.controller('ContactCtrl', ['$scope', function ($scope) {
 			$('#emailInput').addClass('contactFormInvalid');
 		}
 	};
-	$scope.sendMessage = function () {
+	/*$scope.sendMessage = function () {
 		if($('#submit').hasClass('disabled')){
 			return;
 		}
+		/!*if($scope.contactForm.messageInput.$invalid){
+			alert.('Please enter a message');
+		}*!/
 		$('p.confirmMessage').show();
-	};
-	$scope.validateEmail = function(){
-		if($scope.contactForm.emailInput.$invalid){
-			$('#emailInput').addClass('contactFormInvalid');
-		}
-	}
+	};*/
+	/*$scope.validateEmail = function(){
+	 if($scope.contactForm.emailInput.$invalid){
+	 $('#emailInput').addClass('contactFormInvalid');
+	 }
+	 };*/
 }]);

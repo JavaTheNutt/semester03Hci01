@@ -48,5 +48,9 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
             url: '/html/layout',
             templateUrl: 'partials/views/html_layout.html'
         })
+        .state('advanced', {
+			url: '/html/advanced',
+			templateUrl: 'partials/views/html_advanced.html'
+		})
 }]);
 
