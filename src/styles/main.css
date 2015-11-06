@@ -4,28 +4,28 @@ div.jumbotron {
   background-image: url("../img/concrete_seamless.png");
   background-color: white;
   padding: 5px;
-  border: solid #1ab3b4 2px; }
+  border: solid black 2px; }
   div.jumbotron p.jumboSubtitle {
     /*text-align: right;*/
     font-size: 2em; }
   div.jumbotron h1.jumboHeader {
     font-size: 5em;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     /*text-align: left;*/ }
     div.jumbotron h1.jumboHeader span#jumboRed {
       color: red; }
     div.jumbotron h1.jumboHeader span#jumboOrange {
-      color: orange; }
+      color: #E84000; }
     div.jumbotron h1.jumboHeader span#jumboYellow {
-      color: yellow; }
+      color: #E86500; }
     div.jumbotron h1.jumboHeader span#jumboGreen {
-      color: green; }
+      color: #FF9700; }
     div.jumbotron h1.jumboHeader span#jumboBlue {
-      color: blue; }
+      color: #FF9F00; }
     div.jumbotron h1.jumboHeader span#jumboIndigo {
-      color: indigo; }
+      color: #FFBD04; }
     div.jumbotron h1.jumboHeader span#jumboViolet {
-      color: violet; }
+      color: #FFD205; }
 
 div.viewContainer.container div.row div.col-md-6 form#contactForm div.form-group label.control-label {
   font-family: "Amaranth"; }
@@ -47,19 +47,26 @@ div.viewContainer.htmlPage {
       /*SubHeader*/ }
       div.viewContainer.htmlPage div.row div.pageText h3.subHeader {
         font-family: "Permanent Marker";
-        color: #1ab3b4;
+        color: #BD19FF;
         font-size: 2em; }
       div.viewContainer.htmlPage div.row div.pageText h4.underHeader {
-        color: #1ab3b4;
+        color: #BD19FF;
         text-align: left; }
       div.viewContainer.htmlPage div.row div.pageText pre.htmlExample {
         text-align: left; }
+      div.viewContainer.htmlPage div.row div.pageText table.htmlAdvancedTable {
+        width: 100%;
+        background-color: white; }
+        div.viewContainer.htmlPage div.row div.pageText table.htmlAdvancedTable tr th {
+          text-align: center; }
+        div.viewContainer.htmlPage div.row div.pageText table.htmlAdvancedTable tr th, div.viewContainer.htmlPage div.row div.pageText table.htmlAdvancedTable tr td {
+          border: solid black 1px; }
     div.viewContainer.htmlPage div.row div.col-sm-3 {
       padding: 5px; }
       div.viewContainer.htmlPage div.row div.col-sm-3 div.ngScope div.list-group a:link.list-group-item.active {
         background-color: red; }
       div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu {
-        border: ridged #ff2416 3px;
+        border: ridged #19C7FF 3px;
         border-radius: 25px; }
         div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu a {
           margin: 5px; }
@@ -67,24 +74,36 @@ div.viewContainer.htmlPage {
 .contactFormInvalid {
   border-color: red; }
 
+div#disclaimer {
+  font-size: 1.2em; }
+  div#disclaimer div.modal-dialog div.modal-content div.modal-header h4.modalHeader {
+    font-family: "Permanent Marker", cursive;
+    color: #BD19FF;
+    font-size: 1.3em; }
+  div#disclaimer div.modal-dialog div.modal-content div.modal-body p.modalText {
+    font-family: "Amaranth", cursive; }
+
 body {
-  background-color: #ff2416;
-  background-image: url("../img/congruent_pentagon.png"); }
+  background-color: #19C7FF;
+  background-image: url("../img/brick-wall-dark.png"); }
   body div.viewContainer {
     /*background-color: $containerColor;*/
     background-image: url("../img/concrete_seamless.png");
     text-align: center;
     border-radius: 20px;
     margin-bottom: 100px;
-    border: solid #1ab3b4 2px; }
+    border: solid black 2px;
+    font-size: 1.2em; }
     body div.viewContainer h2.homeHeader {
       margin: 20px;
       font-family: "Permanent Marker";
-      color: #1ab3b4;
+      color: #BD19FF;
       font-size: 3em; }
     body div.viewContainer div.pageText {
       padding: 15px;
       font-family: "Amaranth";
       font-size: 1.2em; }
+    body div.viewContainer h4.underHeader {
+      text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

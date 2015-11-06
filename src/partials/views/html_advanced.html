@@ -1,1 +1,46 @@
-advanced html
+<div class="viewContainer htmlPage" ng-controller="AdvancedHtmlCtrl">
+    <div class="row">
+        <div class="pageText col-sm-7">
+            <h3 class="subHeader text-center">Advanced HTML</h3>
+            <p>This page will cover some of the more advanced aspects of HTML</p>
+            <h4 class="underHeader">The &ltdiv&gt tag</h4>
+            <p>
+                The &ltdiv&gt tag means <em>division</em> it is used for separating out elements on a page. That means that different styles can be applied to different divs. Applying
+                styles to web pages will be discussed in later sections.
+            </p>
+            <h4 class="underHeader">Tables</h4>
+            <p>
+                HTML can be used to display tables on the page. Tables are comprised of several different tags. To create a table, you start with a &lttable&gt tag.
+                Tables are made up of both rows(going across) and columns(going down).
+            </p>
+            <p>
+                The rows are set up using the &lttr&gt tag. The number of columns are set up using
+                either &ltth&gt or &lttd&gt tags. &ltth&gt tags are used for the table headers while &lttd&gt tags are used for the data. Below is a simple table made using this method.
+            </p>
+            <br>
+            <a class="btn btn-primary text-center" ng-click="toggleTable()">Show table</a>
+            <br>
+            <br>
+            <table class="htmlAdvancedTable" style="display: none">
+                <tr>
+                    <th>1st Header</th>
+                    <th>2nd Header</th>
+                    <th>3rd Header</th>
+                </tr>
+                <tr>
+                    <td>1st Column</td>
+                    <td>2nd Column</td>
+                    <td>3rdColumn</td>
+                </tr>
+                <tr>
+                    <td>1st Column</td>
+                    <td>2nd Column</td>
+                    <td>3rdColumn</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+            <div ng-include="'/src/partials/templates/htmlNav.html'"></div>
+        </div>
+    </div>
+</div>

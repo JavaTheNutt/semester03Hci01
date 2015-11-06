@@ -48,6 +48,10 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
             url: '/html/layout',
             templateUrl: 'partials/views/html_layout.html'
         })
+        .state('advanced', {
+			url: '/html/advanced',
+			templateUrl: 'partials/views/html_advanced.html'
+		})
 }]);
 
 
@@ -68,11 +72,6 @@ app.controller('ContactCtrl', ['$scope', function ($scope) {
 		}
 		$('p.confirmMessage').show();
 	};
-	$scope.validateEmail = function(){
-		if($scope.contactForm.emailInput.$invalid){
-			$('#emailInput').addClass('contactFormInvalid');
-		}
-	}
 }]);
 
 

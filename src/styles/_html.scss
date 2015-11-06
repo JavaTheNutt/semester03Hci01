@@ -16,6 +16,16 @@ div.viewContainer.htmlPage{
       pre.htmlExample{
         text-align: left;
       }
+      table.htmlAdvancedTable{
+        width : 100%;
+        background-color: white;
+        tr th{
+          text-align: center;
+        }
+        tr th, tr td{
+          border: solid black 1px;
+        }
+      }
     }
     /*Navbar at the side of the pages contained within the
     * html section of the site.*/

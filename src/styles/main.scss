@@ -1,4 +1,4 @@
-$backgroundColor : #ff2416;
+$backgroundColor : #19C7FF;
 $containerColor : #fff;
 $containerBorder: ridged $backgroundColor 3px;
 $headerFont01: "Permanent Marker";
@@ -7,7 +7,7 @@ $jumboFontSize: 5em;
 $pageFont : 'Amaranth';
 $pageFontSize: 1.2em;
 $pageTextPadding: 15px;
-$headerFontColor: #1ab3b4;
+$headerFontColor: #BD19FF;
 
 @import "jumbotron";
 @import "home";
@@ -16,17 +16,19 @@ $headerFontColor: #1ab3b4;
 @import "html";
 @import "viewContainer";
 @import "snippets";
+@import "disclaimer";
 
 body{
   background-color: $backgroundColor;
-  background-image: url("../img/congruent_pentagon.png");
+  background-image: url("../img/brick-wall-dark.png");
   div.viewContainer{
     /*background-color: $containerColor;*/
     background-image: url("../img/concrete_seamless.png");
     text-align: center;
     border-radius: 20px;
     margin-bottom: 100px;
-    border: solid $headerFontColor 2px;
+    border: solid black 2px;
+    font-size: 1.2em;
     h2.homeHeader{
       margin: 20px;
       font-family: $headerFont01;
@@ -37,6 +39,9 @@ body{
       padding: $pageTextPadding;
       font-family: $pageFont;
       font-size: $pageFontSize;
+    }
+    h4.underHeader{
+      text-align: center;
     }
   }
 

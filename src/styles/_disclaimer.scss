@@ -1,0 +1,19 @@
+div#disclaimer{
+  font-size: 1.2em;
+  div.modal-dialog{
+    div.modal-content{
+      div.modal-header{
+        h4.modalHeader{
+          font-family: "Permanent Marker", cursive;
+          color: $headerFontColor;
+          font-size: 1.3em;
+        }
+      }
+      div.modal-body{
+        p.modalText{
+          font-family: "Amaranth", cursive;
+        }
+      }
+    }
+  }
+}

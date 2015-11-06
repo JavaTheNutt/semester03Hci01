@@ -1,6 +1,10 @@
+/*This creates an angular app and sets ui.router as a dependency*/
 var app = angular.module('myApp', [
     'ui.router'
 ]);
+/*This config function applied to the app is part of the ui.router package and will handle routing,
+ * this method of route configuration will allow experienced users to navigate directly to each
+ * page without using the nav links*/
 app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
     $stateProvider
