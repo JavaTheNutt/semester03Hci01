@@ -15,17 +15,23 @@ div.jumbotron {
     div.jumbotron h1.jumboHeader span#jumboRed {
       color: red; }
     div.jumbotron h1.jumboHeader span#jumboOrange {
-      color: #E84000; }
+      /*color: #E84000;*/
+      color: orange; }
     div.jumbotron h1.jumboHeader span#jumboYellow {
-      color: #E86500; }
+      /*color: #E86500;*/
+      color: yellow; }
     div.jumbotron h1.jumboHeader span#jumboGreen {
-      color: #FF9700; }
+      /*color: #FF9700; */
+      color: green; }
     div.jumbotron h1.jumboHeader span#jumboBlue {
-      color: #FF9F00; }
+      /*color: #FF9F00;*/
+      color: blue; }
     div.jumbotron h1.jumboHeader span#jumboIndigo {
-      color: #FFBD04; }
+      /*color: #FFBD04;*/
+      color: indigo; }
     div.jumbotron h1.jumboHeader span#jumboViolet {
-      color: #FFD205; }
+      /*color: #FFD205;*/
+      color: violet; }
 
 div.viewContainer.container div.row div.col-md-6 form#contactForm div.form-group label.control-label {
   font-family: "Amaranth"; }
@@ -38,7 +44,8 @@ div.viewContainer.container div.row div.col-md-6 p.textBesideForm {
   font-size: 1.2em; }
 
 div.viewContainer.htmlPage {
-  padding: 50px; }
+  /*padding: 50px;*/
+  padding: 20px; }
   div.viewContainer.htmlPage div.row {
     /*This is the 6 column div with the content*/
     /*Navbar at the side of the pages contained within the
@@ -83,9 +90,30 @@ div#disclaimer {
   div#disclaimer div.modal-dialog div.modal-content div.modal-body p.modalText {
     font-family: "Amaranth", cursive; }
 
+div.viewContainer div.pageText ul.sitemapListA {
+  text-align: justify;
+  list-style-type: none; }
+  div.viewContainer div.pageText ul.sitemapListA li.sitemapNonLink {
+    color: gray; }
+  div.viewContainer div.pageText ul.sitemapListA ul.sitemapListB {
+    list-style-type: none;
+    padding-left: 80px; }
+
+div.bigPage div.ng-scope div.row div.insideBreadcrumb {
+  margin-top: 10px; }
+  div.bigPage div.ng-scope div.row div.insideBreadcrumb ol.breadcrumb {
+    padding: 0;
+    background-image: url("../img/concrete_seamless.png"); }
+    div.bigPage div.ng-scope div.row div.insideBreadcrumb ol.breadcrumb li {
+      color: black;
+      font-style: italic; }
+
 body {
+  /*background-color: $backgroundColor02;*/
   background-color: #19C7FF;
-  background-image: url("../img/brick-wall-dark.png"); }
+  /*background-color: $backgroundColor03;*/
+  background-image: url("../img/brick-wall-dark.png");
+  /*background-image: url("../img/brick-wall.png");*/ }
   body div.viewContainer {
     /*background-color: $containerColor;*/
     background-image: url("../img/concrete_seamless.png");
@@ -94,16 +122,24 @@ body {
     margin-bottom: 100px;
     border: solid black 2px;
     font-size: 1.2em; }
+    body div.viewContainer div.row div.bigPage {
+      text-align: left;
+      margin-left: 25px;
+      border-radius: 20px;
+      background-image: url("../img/concrete_seamless.png"); }
     body div.viewContainer h2.homeHeader {
       margin: 20px;
       font-family: "Permanent Marker";
+      /*color : $headerFontColor02;*/
       color: #BD19FF;
-      font-size: 3em; }
+      font-size: 2.5em;
+      /*font-size: 5em;*/ }
     body div.viewContainer div.pageText {
       padding: 15px;
       font-family: "Amaranth";
       font-size: 1.2em; }
     body div.viewContainer h4.underHeader {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

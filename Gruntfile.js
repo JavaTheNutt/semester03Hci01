@@ -15,7 +15,8 @@ module.exports = function(grunt){
                     'bower_components/jquery-ui/jquery-ui.js',
                     'bower_components/bootstrap/dist/js/bootstrap.js',
                     'bower_components/angular/angular.js',
-                    'bower_components/angular-ui-router/release/angular-ui-router.js'
+                    'bower_components/angular-ui-router/release/angular-ui-router.js',
+					'bower_components/angular-breadcrumb/dist/angular-breadcrumb.js'
                 ],
                 dest: 'src/build/js/application-deps.js'
             },

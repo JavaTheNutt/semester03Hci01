@@ -1,13 +1,18 @@
-$backgroundColor : #19C7FF;
+$backgroundColor01: #19C7FF;
+$backgroundColor02: #ffa000;
+$backgroundColor03: #fa883c;
+
 $containerColor : #fff;
-$containerBorder: ridged $backgroundColor 3px;
+$containerBorder: ridged $backgroundColor01 3px;
 $headerFont01: "Permanent Marker";
 $jumboFont01: 'Crafty Girls', cursive, sans-serif;
 $jumboFontSize: 5em;
 $pageFont : 'Amaranth';
 $pageFontSize: 1.2em;
 $pageTextPadding: 15px;
-$headerFontColor: #BD19FF;
+
+$headerFontColor01: #BD19FF;
+$headerFontColor02: red;
 
 @import "jumbotron";
 @import "home";
@@ -17,10 +22,16 @@ $headerFontColor: #BD19FF;
 @import "viewContainer";
 @import "snippets";
 @import "disclaimer";
+@import "sitemap";
+@import "breadcrumb";
 
 body{
-  background-color: $backgroundColor;
-  background-image: url("../img/brick-wall-dark.png");
+  /*background-color: $backgroundColor02;*/   //yellow-red
+  background-color: $backgroundColor01; //blue-purple
+  /*background-color: $backgroundColor03;*/
+
+  background-image: url("../img/brick-wall-dark.png");  //dark
+  /*background-image: url("../img/brick-wall.png");*/ //light
   div.viewContainer{
     /*background-color: $containerColor;*/
     background-image: url("../img/concrete_seamless.png");
@@ -28,12 +39,23 @@ body{
     border-radius: 20px;
     margin-bottom: 100px;
     border: solid black 2px;
-    font-size: 1.2em;
+    font-size:1.2em;
+    div.row{
+
+      div.bigPage{
+        text-align: left;
+        margin-left: 25px;
+        border-radius: 20px;
+        background-image: url("../img/concrete_seamless.png");
+      }
+    }
     h2.homeHeader{
       margin: 20px;
       font-family: $headerFont01;
-      color : $headerFontColor;
-      font-size: 3em;
+      /*color : $headerFontColor02;*/   //yellow-red
+      color: $headerFontColor01;  //blue-purple
+      font-size: 2.5em;
+      /*font-size: 5em;*/
     }
     div.pageText{
       padding: $pageTextPadding;
@@ -42,6 +64,7 @@ body{
     }
     h4.underHeader{
       text-align: center;
+      font-size: 1.2em;
     }
   }
 

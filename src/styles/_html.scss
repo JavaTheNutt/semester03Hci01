@@ -1,16 +1,17 @@
 div.viewContainer.htmlPage{
-  padding: 50px;
+  /*padding: 50px;*/
+  padding: 20px;
   div.row{
     /*This is the 6 column div with the content*/
     div.pageText{
       /*SubHeader*/
       h3.subHeader{
         font-family: $headerFont01;
-        color: $headerFontColor;
+        color: $headerFontColor01;
         font-size: 2em;
       }
       h4.underHeader{
-        color: $headerFontColor;
+        color: $headerFontColor01;
         text-align: left;
       }
       pre.htmlExample{
