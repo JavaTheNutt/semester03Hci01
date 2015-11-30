@@ -33,49 +33,49 @@ div.jumbotron {
       /*color: #FFD205;*/
       color: violet; }
 
-div.viewContainer.container div.row div.col-md-6 form#contactForm div.form-group label.control-label {
+div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group label.control-label {
   font-family: "Amaranth"; }
-div.viewContainer.container div.row div.col-md-6 form#contactForm div.form-group div.col-sm-9 input#emailInput.contactFormInvalid {
+div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group div.col-sm-9 input#emailInput.contactFormInvalid {
   border-color: red; }
-div.viewContainer.container div.row div.col-md-6 form#contactForm div.form-group div#textareaDiv textarea#messageInput {
+div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group div#textareaDiv textarea#messageInput {
   resize: vertical; }
-div.viewContainer.container div.row div.col-md-6 p.textBesideForm {
+div.viewContainer div.container div.row div.col-md-5 p.textBesideForm {
   font-family: "Amaranth";
   font-size: 1.2em; }
 
-div.viewContainer.htmlPage {
+div.htmlPage {
   /*padding: 50px;*/
   padding: 20px; }
-  div.viewContainer.htmlPage div.row {
+  div.htmlPage div.row {
     /*This is the 6 column div with the content*/
     /*Navbar at the side of the pages contained within the
     * html section of the site.*/ }
-    div.viewContainer.htmlPage div.row div.pageText {
+    div.htmlPage div.row div.pageText {
       /*SubHeader*/ }
-      div.viewContainer.htmlPage div.row div.pageText h3.subHeader {
+      div.htmlPage div.row div.pageText h3.subHeader {
         font-family: "Permanent Marker";
         color: #BD19FF;
         font-size: 2em; }
-      div.viewContainer.htmlPage div.row div.pageText h4.underHeader {
+      div.htmlPage div.row div.pageText h4.underHeader {
         color: #BD19FF;
         text-align: left; }
-      div.viewContainer.htmlPage div.row div.pageText pre.htmlExample {
+      div.htmlPage div.row div.pageText pre.htmlExample {
         text-align: left; }
-      div.viewContainer.htmlPage div.row div.pageText table.htmlAdvancedTable {
+      div.htmlPage div.row div.pageText table.htmlAdvancedTable {
         width: 100%;
         background-color: white; }
-        div.viewContainer.htmlPage div.row div.pageText table.htmlAdvancedTable tr th {
+        div.htmlPage div.row div.pageText table.htmlAdvancedTable tr th {
           text-align: center; }
-        div.viewContainer.htmlPage div.row div.pageText table.htmlAdvancedTable tr th, div.viewContainer.htmlPage div.row div.pageText table.htmlAdvancedTable tr td {
+        div.htmlPage div.row div.pageText table.htmlAdvancedTable tr th, div.htmlPage div.row div.pageText table.htmlAdvancedTable tr td {
           border: solid black 1px; }
-    div.viewContainer.htmlPage div.row div.col-sm-3 {
+    div.htmlPage div.row div.col-sm-3 {
       padding: 5px; }
-      div.viewContainer.htmlPage div.row div.col-sm-3 div.ngScope div.list-group a:link.list-group-item.active {
+      div.htmlPage div.row div.col-sm-3 div.ngScope div.list-group a:link.list-group-item.active {
         background-color: red; }
-      div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu {
+      div.htmlPage div.row div.col-sm-3 div.htmlMenu {
         border: ridged #19C7FF 3px;
         border-radius: 25px; }
-        div.viewContainer.htmlPage div.row div.col-sm-3 div.htmlMenu a {
+        div.htmlPage div.row div.col-sm-3 div.htmlMenu a {
           margin: 5px; }
 
 .contactFormInvalid {
@@ -90,15 +90,6 @@ div#disclaimer {
   div#disclaimer div.modal-dialog div.modal-content div.modal-body p.modalText {
     font-family: "Amaranth", cursive; }
 
-div.viewContainer div.pageText ul.sitemapListA {
-  text-align: justify;
-  list-style-type: none; }
-  div.viewContainer div.pageText ul.sitemapListA li.sitemapNonLink {
-    color: gray; }
-  div.viewContainer div.pageText ul.sitemapListA ul.sitemapListB {
-    list-style-type: none;
-    padding-left: 80px; }
-
 div.bigPage div.ng-scope div.row div.insideBreadcrumb {
   margin-top: 10px; }
   div.bigPage div.ng-scope div.row div.insideBreadcrumb ol.breadcrumb {
@@ -109,19 +100,17 @@ div.bigPage div.ng-scope div.row div.insideBreadcrumb {
       font-style: italic; }
 
 body {
-  /*background-color: $backgroundColor02;*/
   background-color: #19C7FF;
-  /*background-color: $backgroundColor03;*/
-  background-image: url("../img/brick-wall-dark.png");
-  /*background-image: url("../img/brick-wall.png");*/ }
+  background-image: url("../img/brick-wall-dark.png"); }
   body div.viewContainer {
-    /*background-color: $containerColor;*/
     background-image: url("../img/concrete_seamless.png");
     text-align: center;
     border-radius: 20px;
     margin-bottom: 100px;
     border: solid black 2px;
     font-size: 1.2em; }
+    body div.viewContainer div.ng-scope div.htmlPage div.row div.row div.pageText div.row div.hide {
+      display: none; }
     body div.viewContainer div.row div.bigPage {
       text-align: left;
       margin-left: 25px;
@@ -130,10 +119,8 @@ body {
     body div.viewContainer h2.homeHeader {
       margin: 20px;
       font-family: "Permanent Marker";
-      /*color : $headerFontColor02;*/
       color: #BD19FF;
-      font-size: 2.5em;
-      /*font-size: 5em;*/ }
+      font-size: 2.5em; }
     body div.viewContainer div.pageText {
       padding: 15px;
       font-family: "Amaranth";
@@ -141,5 +128,7 @@ body {
     body div.viewContainer h4.underHeader {
       text-align: center;
       font-size: 1.2em; }
+    body div.viewContainer pre.preCode {
+      text-align: left; }
 
 /*# sourceMappingURL=main.css.map */

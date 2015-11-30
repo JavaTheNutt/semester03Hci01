@@ -15,22 +15,26 @@
     Bootstrap, Bootstrap-Theme-->
     <link rel="stylesheet" href="build/styles/application-style.css">
     <!--Developer Styles-->
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
     <link rel="stylesheet" href="styles/main.css">
 
     <title>KidCode || Coding for kids!</title>
 
 </head>
+<!--Sets up the body as an angular app-->
 <body ng-app="myApp">
+<!--Include navbar-->
 <div ng-include="'partials/templates/nav.html'"></div>
     <div class="container">
-        <!--Navbar-->
         <div class="container">
-            <!--Jumbotron-->
+            <!--Include jumbotron-->
             <div ng-include="'partials/templates/jumbotron.html'"></div>
         </div>
         <div class="container">
             <!--Views go here-->
-            <div ui-view></div>
+            <div class="viewContainer">
+                <div ui-view></div>
+            </div>
         </div>
     </div>
     <div class="modal fade" id="disclaimer" role="dialog">
@@ -52,7 +56,7 @@
     </div>
     <div ng-include="'partials/templates/footer.html'"></div>
 <!--Vendor Scripts
-Bootstrap, JQuery, JQuery-Ui, Angular, Angular-Ui-->
+Bootstrap, JQuery, JQuery-Ui, Angular, Angular-Ui, ncy-breadcrumb-->
 <script src="build/js/application-deps.js"></script>
 <!--Developer Scripts-->
 <script src="build/js/application.js"></script>

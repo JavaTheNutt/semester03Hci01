@@ -1,0 +1,34 @@
+<div class="htmlPage">
+    <div class="row">
+        <div class="bigPage col-sm-11">
+            <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="pageText col-sm-7">
+            <h3 class="subHeader text-center">Hyperlinks</h3>
+
+            <h4 class="underHeader">The &lta&gt tag</h4>
+
+            <p>
+                The &lta&gt tag is used for <em>hyperlinks</em>. A hyperlink is a link that links you to
+                something
+                else on the internet. An example would be
+                how I can make <a
+                    href="https://www.google.ie/search?q=funny+cat&tbm=isch&imgil=sKYUQsX9cMoQ0M%253A%253B5WIVuNTvHpE7pM%253Bhttps%25253A%25252F%25252Fwww.youtube.com%25252Fwatch%25253Fv%2525253DtntOCGkgt98&source=iu&pf=m&fir=sKYUQsX9cMoQ0M%253A%252C5WIVuNTvHpE7pM%252C_&biw=1366&bih=657&usg=__8x0657Zbd1hUvyb0GdQ2XgmfNzQ%3D&ved=0ahUKEwiZrL7d5K3JAhXCDg8KHR6MBewQyjcILw&ei=YdJWVtn3O8KdPJ6YluAO#imgrc=pc4emiWuOvOlCM%3A&usg=__8x0657Zbd1hUvyb0GdQ2XgmfNzQ%3D">this</a>
+                word link to a picture of a cat. Another example is the all of the navigation buttons on this
+                site.
+                They open up pages because they are &lta&gt tags!
+            </p>
+            <pre class="preCode">{{examples.aTag}}</pre>
+            <p>
+                The above code is an example of an &lta&gt tag. The href attribute is the <em>hyperlink reference</em> and is the <em>URL</em>
+                of where you want to go. (A URL is an address on the web). The target="_blank" makes sure that this link is opened in a new window.
+                If you are looking to link to something within your site, you just need to put the path to that file in the href attribute.
+            </p>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+            <div ng-include="'/src/partials/templates/htmlNav.html'"></div>
+        </div>
+    </div>
+</div>

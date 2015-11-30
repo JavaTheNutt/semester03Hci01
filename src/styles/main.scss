@@ -15,31 +15,38 @@ $headerFontColor01: #BD19FF;
 $headerFontColor02: red;
 
 @import "jumbotron";
-@import "home";
-@import "about";
 @import "contact";
 @import "html";
-@import "viewContainer";
 @import "snippets";
 @import "disclaimer";
-@import "sitemap";
 @import "breadcrumb";
 
 body{
-  /*background-color: $backgroundColor02;*/   //yellow-red
   background-color: $backgroundColor01; //blue-purple
-  /*background-color: $backgroundColor03;*/
 
   background-image: url("../img/brick-wall-dark.png");  //dark
-  /*background-image: url("../img/brick-wall.png");*/ //light
   div.viewContainer{
-    /*background-color: $containerColor;*/
     background-image: url("../img/concrete_seamless.png");
     text-align: center;
     border-radius: 20px;
     margin-bottom: 100px;
     border: solid black 2px;
     font-size:1.2em;
+    div.ng-scope{
+      div.htmlPage{
+        div.row{
+          div.row{
+			div.pageText{
+			  div.row{
+				div.hide{
+				  display: none;
+				}
+			  }
+			}
+		  }
+        }
+      }
+    }
     div.row{
 
       div.bigPage{
@@ -52,10 +59,8 @@ body{
     h2.homeHeader{
       margin: 20px;
       font-family: $headerFont01;
-      /*color : $headerFontColor02;*/   //yellow-red
       color: $headerFontColor01;  //blue-purple
       font-size: 2.5em;
-      /*font-size: 5em;*/
     }
     div.pageText{
       padding: $pageTextPadding;
@@ -65,6 +70,9 @@ body{
     h4.underHeader{
       text-align: center;
       font-size: 1.2em;
+    }
+    pre.preCode{
+      text-align: left;
     }
   }
 

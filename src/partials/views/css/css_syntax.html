@@ -1,0 +1,33 @@
+<div class="htmlPage" ng-controller="SyntaxCssCtrl">
+    <div class="row">
+        <div class="bigPage col-sm-11">
+            <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="pageText col-sm-7">
+            <h3 class="subHeader text-center">CSS Syntax</h3>
+            <p>
+                The syntax for writing css is simple. You simply write the name of the element that you wish to style and the rule that
+                you wish to apply. Below is a example of how this is achieved.
+            </p>
+            <pre class="preCode">{{examples.preText02}}</pre>
+            <h4 class="underHeader">Common rules</h4>
+            <p>
+                Below are some of the most common rules, along with an explanation of them. The words between the /* and */ are known as
+                <em>comments</em> and are only for humans to read, the computer ignores them.
+            </p>
+            <a class="btn btn-primary" ng-click="toggleCode()">Show Code</a>
+            <br>
+            <pre class="preCode hide" id="commonRules">{{examples.preText03}}</pre>
+            <p>
+                At the bottom of this page is a button that will show you what the above css code will do to the below html code.
+            </p>
+            <pre class="preCode">{{examples.preText04}}</pre>
+            <a class="btn btn-primary" href="/src/partials/examples/example03.html" target="_blank">Example03</a>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+            <div ng-include="'/src/partials/templates/cssNav.html'"></div>
+        </div>
+    </div>
+</div>

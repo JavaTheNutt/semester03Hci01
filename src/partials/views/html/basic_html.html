@@ -1,0 +1,74 @@
+<div class="htmlPage">
+    <div class="row">
+        <div class="bigPage col-sm-11">
+            <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="pageText col-sm-7">
+            <h3 class="subHeader text-center">Some basic html tags</h3>
+
+            <p>
+                This page will explain some of the basic html tags and how they should be used.
+            </p>
+            <a class="btn btn-primary" ng-click="toggleViews($event)" id="exp">Explanations</a>
+            <a class="btn btn-primary" ng-click="toggleViews($event)" id="exm">Examples</a>
+
+            <div class="row">
+                <div id="htmlExp">
+                    <h4 class="underHeader">The &ltp&gt tag</h4>
+
+                    <p>
+                        This is the most basic tag. It is a <em>paragraph</em> tag. This tag is used for placing basic
+                        paragraphs of text on the
+                        screen.
+                    </p>
+                    <h4 class="underHeader">The heading tags</h4>
+
+                    <p>
+                        There are six types of heading in html. They range from &lth1&gt to &lth6&gt, with &lth1&gt
+                        being
+                        the largest and &lth6&gt
+                        being the smallest.
+                    </p>
+                    <h4 class="underHeader">The &lthr&gt tag</h4>
+
+                    <p>
+                        The &lthr&gt tag stands for <em>Horizontal Rule</em> and is used for placing a horizontal line
+                        across the page.
+                    </p>
+                    <h4 class="underHeader">The &ltbr&gt tag</h4>
+                    <p>
+                        The &ltbr&gt tag is used for a <em>break</em>. This is like hitting return in a word document, it simply moves on to
+                        the next line
+                    </p>
+                    <h4 class="underHeader">The &ltimg&gt tag</h4>
+                    <p>
+                        The &ltimg&gt tag is used for placing images on the screen. An &ltimg&gt tag <em>must</em> have a src attribute. This src
+                        attribute will be the <em>URL</em> of the image.
+                    </p>
+                </div>
+                <div id="htmlExm" class="hide">
+                    <h4 class="underHeader">Example</h4>
+                    <p>
+                        The below code uses all the tags discussed on the previous page. The button below that will show the output when the
+                        HTML is put between the &ltbody&gt body tags.
+                    </p>
+                    <pre class="preCode">{{examples.headingTag}}{{examples.hrTag}}{{examples.pTag}}{{examples.imgTag}}</pre>
+                    <a class="btn btn-primary" href="/src/partials/examples/example02.html" target="_blank">Example02</a>
+                </div>
+            </div>
+            <!--Development-->
+
+            <!--Production-->
+            <!--<a class="btn btn-primary" href="partials/examples/example02.html" target="_blank">Example02</a>-->
+
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+            <!--Development-->
+            <div ng-include="'/src/partials/templates/htmlNav.html'"></div>
+            <!--Production-->
+            <!--<div ng-include="'partials/templates/htmlNav.html'"></div>-->
+        </div>
+    </div>
+</div>

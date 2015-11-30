@@ -1,9 +1,5 @@
 /bower_components/
 /node_modules/
-/test/
-/tests/
 /src/styles/*.scss/
 /.idea/*.xml/
-/src/js/*.js/
-/src/app.js/
 /Gruntfile.js/

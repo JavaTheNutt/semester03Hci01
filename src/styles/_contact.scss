@@ -1,27 +1,32 @@
-div.viewContainer.container{
-  div.row{
-    div.col-md-6{
-      form#contactForm{
-        div.form-group{
-          label.control-label{
-            font-family: $pageFont;
-          }
-          div.col-sm-9{
-            input#emailInput.contactFormInvalid{
-              border-color: red;
+div.viewContainer{
+  div.container{
+    div.row{
+      div.col-md-6{
+        form#contactForm{
+          div.form-group{
+            label.control-label{
+              font-family: $pageFont;
             }
-          }
-          div#textareaDiv{
-            textarea#messageInput{
-              resize: vertical;
+            div.col-sm-9{
+              input#emailInput.contactFormInvalid{
+                border-color: red;
+              }
+            }
+            div#textareaDiv{
+              textarea#messageInput{
+                resize: vertical;
+              }
             }
           }
         }
       }
-      p.textBesideForm{
-        font-family: $pageFont;
-        font-size: $pageFontSize;
+      div.col-md-5{
+        p.textBesideForm{
+          font-family: $pageFont;
+          font-size: $pageFontSize;
+        }
       }
     }
   }
+
 }

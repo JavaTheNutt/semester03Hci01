@@ -1,0 +1,66 @@
+<div class=" htmlPage" ng-controller="IncludeCssControl">
+    <div class="row">
+        <div class="bigPage col-sm-11">
+            <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="pageText col-sm-7">
+
+            <h3 class="subHeader text-center">Including CSS</h3>
+
+            <p>
+                There are several ways to include CSS in your website. The most common way is by using an external
+                stylesheet, but
+                we will explain them all here.
+            </p>
+            <a class="btn btn-primary" ng-click="showInternal()">Show Internal</a>
+            <a class="btn btn-primary" ng-click="showExternal()">Show External</a>
+            <a class="btn btn-primary" ng-click="showInline()">Show Inline</a>
+            <div id="inlineCss">
+                <h4 class="underHeader">Inline Styling</h4>
+                <p>
+                    Inline styling is the easiest way to add style to a page, but it is very limited in what it can do.
+                    Inline styling
+                    is applied directly to the element. Inline styling can be useful when a small amount of style is
+                    needed. An example would
+                    be, if you wished to turn a paragraph red(remember our &ltp&gt tag!), you would write the tag as
+                    follows:
+                </p>
+                <pre style="text-align: left">&ltp style="color:red"&gtSome text here&lt/p&gt</pre>
+            </div>
+            <div id="internalCss" class="hide">
+                <h4 class="underHeader">Internal Stylesheet</h4>
+                <p>
+                    Another easy way to add style to a page is to put an internal stylesheet inside the head of the
+                    page. This is a neater method than
+                    inline styling. To use an internal stylesheet in the head section of your page. Below is an example
+                    of an internal stylesheet.
+                </p>
+                <a class="btn-primary btn" ng-click="toggleCode()">Show Code</a>
+                <pre class="preCode hide" id="internalExample">{{examples.preText02}}</pre>
+                <p>
+                    The above code would be written in the head tag and would set the font color of all paragraphs to
+                    red and the font size to 12 pixels. This will
+                    also set the font color of any &lth1&gt tag to blue.
+                </p></div>
+            <div id="externalCss" class="hide">
+                <h4 class="underHeader">External Stylesheet</h4>
+                <p>
+                    The most common way of styling web pages is to use an external stylesheet. An external style sheet is
+                    a file that ends with .css.
+                    If you want to include the file just put the line below into the head section of the web page.
+                </p>
+                <pre class="preCode">{{examples.preText01}}</pre>
+                <p>
+                    In the above example, it is ok to use just the name of the css in the href attribute.
+                    This will only work if the css file is in the same folder as the html file. Otherwise, you need to
+                    type the <em>path</em> to the file.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+            <div ng-include="'/src/partials/templates/cssNav.html'"></div>
+        </div>
+    </div>
+</div>

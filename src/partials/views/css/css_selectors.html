@@ -1,0 +1,72 @@
+<div class="htmlPage" ng-controller="SelectorsCssCtrl">
+    <div class="row">
+        <div class="bigPage col-sm-11">
+            <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="pageText col-sm-7">
+            <div class="row">
+                <h3 class="subHeader text-center">CSS Selectors</h3>
+                <p>
+                    This section will explain what classes and id's are used for when using CSS.
+                </p>
+            </div>
+            <div class="row">
+                <div>
+                    <a class="btn btn-primary" ng-click="toggleViews($event)" id="showClass">Classes</a>
+                    <a class="btn btn-primary" ng-click="toggleViews($event)" id="showId">Id's</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="cssClasses">
+                    <h4 class="underHeader">Classes</h4>
+
+                    <p>
+                        Classes are added to HTML elements to ensure that when CSS styles are applied, they are only
+                        applied to
+                        the elements that also have the class applied. Consider the below HTML:
+                    </p>
+                    <pre class="preCode">{{classes.pre01}}</pre>
+                    <p>
+                        Now we can select the &ltp&gt tag with the class added without selecting any p tags without the
+                        class. This is done like this:
+                    </p>
+                    <pre class="preCode">{{classes.pre02}}</pre>
+                    <p>
+                        The above rules will set the color of any &ltp&gt tag to blue. Then it will specify that any
+                        &ltp&gt tag with the para class attached
+                        (notice p.para in the stylesheet) will be red. The button below will show you what happens when
+                        you combine the html and css.
+                    </p>
+                    <a class="btn btn-primary" href="/src/partials/examples/example04.html"
+                       target="_blank">Example04</a>
+                </div>
+                <div id="cssIds" class="hide">
+                    <h4 class="underHeader" >Id's</h4>
+                    <p>
+                        An id is similar to a class except that it should only be added to a <strong>single</strong>
+                        element on a page.
+                        It is more commonly used in JavaScript where you would need to access a specific element on a
+                        page. To use an id in
+                        HTML, add the following code:
+                    </p>
+                    <pre class="preCode">{{ids.pre01}}</pre>
+                    <p>
+                        Notice how we used  id="para" instead of class="para". Below is an example of how to implement this code
+                    </p>
+                    <pre class="preCode">{{ids.pre02}}</pre>
+                    <p>
+                        The button below will show you what will happen if the HTML and CSS above are combined.
+                    </p>
+                    <a class="btn btn-primary" href="/src/partials/examples/example05.html" target="_blank">Example 05</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-3 col-sm-offset-1">
+            <div ng-include="'/src/partials/templates/cssNav.html'"></div>
+        </div>
+    </div>
+</div>
