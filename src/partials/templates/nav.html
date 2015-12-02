@@ -1,22 +1,36 @@
+<!--This will be the navbar at the top of the screen-->
 <div class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
+            <!--This is the link on the left side of the navbar-->
             <a ui-sref="home" class="navbar-brand">Home </a>
+            <!--This is the button that will be shown if the screen is smaller. This will cause all of the links to be inside a dropdown when the screen
+            shrinks below a certain size-->
             <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <!--This specifes that there will be three icon-bars on the button above.-->
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </div>
         <div class="collapse navbar-collapse navHeaderCollapse">
+            <!--These are the links on the right-hand side of the navabar-->
             <ul class="nav navbar-nav navbar-right">
+                <!--Link to the HTML section-->
                 <li ui-sref-active="active"><a ui-sref="html" class="navbar-btn">HTML</a> </li>
+                <!--Link to the CSS section-->
                 <li ui-sref-active="active"><a ui-sref="css" class="navbar-btn">CSS</a></li>
+                <!--Dropdown Menu-->
                 <li class="dropdown">
+                    <!--This is the link with no url that will trigger the dropdown.-->
                     <a href="#" class="navbar-btn dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b> </a>
+                    <!--Dropdown options-->
                     <ul class="dropdown-menu">
+                        <!--Link to the about section-->
                         <li><a ui-sref="about">About this project</a> </li>
+                        <!--Link to the references section-->
                         <li><a ui-sref="references">References</a></li>
+                        <!--Link to the contact section-->
                         <li><a ui-sref="contact">Contact</a> </li>
                     </ul>
                 </li>

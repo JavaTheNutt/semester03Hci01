@@ -1,3 +1,5 @@
+/*This is the main SCSS file. This is the file where all of the variables are initialised and the other files are imported to. This
+ page is also the one that is compiled into CSS to be read by the browser. The lines below initalise all variables to be used throughout the site.*/
 $backgroundColor01: #19C7FF;
 $backgroundColor02: #ffa000;
 $backgroundColor03: #fa883c;
@@ -14,6 +16,7 @@ $pageTextPadding: 15px;
 $headerFontColor01: #BD19FF;
 $headerFontColor02: red;
 
+/*Here is where all of the other SCSS files are imported*/
 @import "jumbotron";
 @import "contact";
 @import "html";
@@ -21,10 +24,12 @@ $headerFontColor02: red;
 @import "disclaimer";
 @import "breadcrumb";
 
+/*Styles to be applied to the entire body*/
 body{
   background-color: $backgroundColor01; //blue-purple
 
   background-image: url("../img/brick-wall-dark.png");  //dark
+  /*Styles to be applied to the view container*/
   div.viewContainer{
     background-image: url("../img/concrete_seamless.png");
     text-align: center;
@@ -38,6 +43,7 @@ body{
           div.row{
 			div.pageText{
 			  div.row{
+				/*Any div with a class of hide will be hidden*/
 				div.hide{
 				  display: none;
 				}
@@ -49,6 +55,7 @@ body{
     }
     div.row{
 
+	  /*Styling for the pages without a navbar at the side of the container*/
       div.bigPage{
         text-align: left;
         margin-left: 25px;
@@ -56,21 +63,25 @@ body{
         background-image: url("../img/concrete_seamless.png");
       }
     }
+	/*Styling for the upper headers on the pages */
     h2.homeHeader{
       margin: 20px;
       font-family: $headerFont01;
       color: $headerFontColor01;  //blue-purple
       font-size: 2.5em;
     }
+	/*Styling for the content in the divs*/
     div.pageText{
       padding: $pageTextPadding;
       font-family: $pageFont;
       font-size: $pageFontSize;
     }
+	/*Styling for the lower headers on he page*/
     h4.underHeader{
       text-align: center;
       font-size: 1.2em;
     }
+	/*Styling for the example code in the pre tags*/
     pre.preCode{
       text-align: left;
     }

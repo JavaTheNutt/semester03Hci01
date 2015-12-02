@@ -1,11 +1,14 @@
+<!--This view is seen when the contact link is clicked in the about dropdown. This view has an associated controller, ContactCtrl-->
 <div class="container" ng-controller="ContactCtrl">
     <div class="row">
         <div class="bigPage col-sm-10">
+            <!--Link to breadcrumb-->
             <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
 
             <!--<div ng-include="'/src/partials/templates/breadcrumb.html'"></div>-->
         </div>
     </div>
+    <!--Content-->
     <h2 class="homeHeader">Contact Me!</h2>
     <div class="pageText">
         <p>
@@ -14,19 +17,26 @@
     </div>
     <div class="row">
         <div class="col-md-6">
+            <!--Form for contact. Novalidate ensures that there is no native HTML5 validation going to take place on the form-->
             <form class="form form-horizontal" name="contactForm" id="contactForm" novalidate>
+                <!--Group for name-->
                 <div class="form-group">
                     <label for="nameInput" class="control-label col-sm-3">Name:</label>
                     <div class="col-sm-9">
+                        <!--The ng-model attribute ensures that the value typed into the text box is stored in the controller as a variable-->
                         <input type="text" id="nameInput" class="form-control" autofocus ng-model="fname">
                     </div>
                 </div>
+                <!--Group for email. Form cannot be submitted if not valid-->
                 <div class="form-group">
                     <label for="emailInput" class="control-label col-sm-3">Email:</label>
                     <div class="col-sm-9">
+                        <!--Ng-model ensures that the value typed in is stored in a variable controller. ng-change will call the check email function
+                        every time the value is changed-->
                         <input type="email" id="emailInput" name="emailInput" class="form-control" required ng-model="emailInput" ng-change="checkEmail()">
                     </div>
                 </div>
+                <!--Group for messaeg-->
                 <div class="form-group">
                     <label for="messageInput" class="control-label col-sm-3">Message</label>
                     <div class="col-sm-9" id="textareaDiv">
@@ -34,18 +44,24 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <button  id="submit"class="btn btn-primary disabled" ng-click="sendMessage()" data-toggle="tooltip" title="Please enter a valid email">Submit</button>
+                    <!--This submit button will call the sendMessage() function in the controller. This function displays the confirm message <div>
+                    if the form is valid-->
+                    <button  id="submit" class="btn btn-primary disabled" ng-click="sendMessage()" data-toggle="tooltip" title="Please enter a valid email">Submit</button>
+                    <!--This button will reset all fields-->
                     <button type="reset" class="btn btn-success">Reset</button>
                 </div>
             </form>
+            <!--This is the message that is shown if the submit button is pressed when the form is valid-->
             <p class="confirmMessage" style="display: none">
                 Message Not Sent. Server not operational. Please contact site admin at joewemyss3@gmail.com.
             </p>
+            <!--This is the message that is shown if the message field is empty-->
             <p class="emptyMessage" style="display: none">
                 Please enter a message!
             </p>
         </div>
         <div class="col-md-5">
+            <!--The text beside the form-->
             <p class="textBesideForm">
                 Form not operational. This form was placed in the page for demonstration purposes
                 only. In order to add functionality to this form, there would need to be some server side scripting.

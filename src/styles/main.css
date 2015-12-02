@@ -1,17 +1,26 @@
+/*This is the main SCSS file. This is the file where all of the variables are initialised and the other files are imported to. This
+ page is also the one that is compiled into CSS to be read by the browser. The lines below initalise all variables to be used throughout the site.*/
+/*Here is where all of the other SCSS files are imported*/
+/*This is the styling for the jumbotron at the top of each page*/
 div.jumbotron {
+  /*These rules are applied to the entire jumbotron*/
   font-family: "Crafty Girls", cursive, sans-serif;
   text-align: center;
   background-image: url("../img/concrete_seamless.png");
   background-color: white;
   padding: 5px;
-  border: solid black 2px; }
+  border: solid black 2px;
+  /*This is the styling for the tagline on the jumbotron*/
+  /*This is the styling for the actual kidcode text*/ }
   div.jumbotron p.jumboSubtitle {
-    /*text-align: right;*/
     font-size: 2em; }
   div.jumbotron h1.jumboHeader {
+    /*Enlarge the font*/
     font-size: 5em;
+    /*Put a 2px thick shadow around each letter*/
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    /*text-align: left;*/ }
+    /*These seven spans represent each letter in the title. Most of them have two rules with one commented out. This is because I left the
+    rules for the most popular alternate color scheme*/ }
     div.jumbotron h1.jumboHeader span#jumboRed {
       color: red; }
     div.jumbotron h1.jumboHeader span#jumboOrange {
@@ -33,25 +42,38 @@ div.jumbotron {
       /*color: #FFD205;*/
       color: violet; }
 
-div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group label.control-label {
-  font-family: "Amaranth"; }
-div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group div.col-sm-9 input#emailInput.contactFormInvalid {
-  border-color: red; }
-div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group div#textareaDiv textarea#messageInput {
-  resize: vertical; }
-div.viewContainer div.container div.row div.col-md-5 p.textBesideForm {
-  font-family: "Amaranth";
-  font-size: 1.2em; }
+/*This is the styling for the contact form*/
+div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group {
+  /*set the font family for the control label to be the same as the page font*/ }
+  div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group label.control-label {
+    font-family: "Amaranth"; }
+  div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group div.col-sm-9 {
+    /*Style for invalid email*/ }
+    div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group div.col-sm-9 input#emailInput.contactFormInvalid {
+      border-color: red; }
+  div.viewContainer div.container div.row div.col-md-6 form#contactForm div.form-group div#textareaDiv textarea#messageInput {
+    /*Only allow vertical resize of textarea*/
+    resize: vertical; }
+div.viewContainer div.container div.row div.col-md-5 {
+  /*Style text beside the form*/ }
+  div.viewContainer div.container div.row div.col-md-5 p.textBesideForm {
+    font-family: "Amaranth";
+    font-size: 1.2em; }
 
+/*This is the styling that is applied to most of the pages. It was origianlly intended to be used specifically for the html subsection of the
+site but it ended up being used for common rules used throughout the site*/
 div.htmlPage {
-  /*padding: 50px;*/
+  /*Set padding on page*/
   padding: 20px; }
   div.htmlPage div.row {
     /*This is the 6 column div with the content*/
     /*Navbar at the side of the pages contained within the
     * html section of the site.*/ }
     div.htmlPage div.row div.pageText {
-      /*SubHeader*/ }
+      /*SubHeader*/
+      /*Style smaller headers*/
+      /*Style a pre tag*/
+      /*Style the table on the HTML advanced page*/ }
       div.htmlPage div.row div.pageText h3.subHeader {
         font-family: "Permanent Marker";
         color: #BD19FF;
@@ -78,44 +100,66 @@ div.htmlPage {
         div.htmlPage div.row div.col-sm-3 div.htmlMenu a {
           margin: 5px; }
 
+/*This was originally intended to be used for short CSS snippets that could be used throughout the site. Currently there is only one such snippet,
+the one used when the contact form is invalid*/
 .contactFormInvalid {
   border-color: red; }
 
+/*This is the styling for the disclaimer modal*/
 div#disclaimer {
   font-size: 1.2em; }
-  div#disclaimer div.modal-dialog div.modal-content div.modal-header h4.modalHeader {
-    font-family: "Permanent Marker", cursive;
-    color: #BD19FF;
-    font-size: 1.3em; }
-  div#disclaimer div.modal-dialog div.modal-content div.modal-body p.modalText {
-    font-family: "Amaranth", cursive; }
+  div#disclaimer div.modal-dialog div.modal-content {
+    /*Style body*/ }
+    div#disclaimer div.modal-dialog div.modal-content div.modal-header {
+      /*Style header*/ }
+      div#disclaimer div.modal-dialog div.modal-content div.modal-header h4.modalHeader {
+        font-family: "Permanent Marker", cursive;
+        color: #BD19FF;
+        font-size: 1.3em; }
+    div#disclaimer div.modal-dialog div.modal-content div.modal-body p.modalText {
+      font-family: "Amaranth", cursive; }
 
+/*This is the styling for the breadcrumbs*/
 div.bigPage div.ng-scope div.row div.insideBreadcrumb {
+  /*This sets a margin to keep the breadcrumb down from the top of the container*/
   margin-top: 10px; }
   div.bigPage div.ng-scope div.row div.insideBreadcrumb ol.breadcrumb {
+    /*Minimise the space around the breadcrumb*/
     padding: 0;
-    background-image: url("../img/concrete_seamless.png"); }
+    /*Set the background image to blend with the backgound of the container*/
+    background-image: url("../img/concrete_seamless.png");
+    /*Style the font of the breadcrumb*/ }
     div.bigPage div.ng-scope div.row div.insideBreadcrumb ol.breadcrumb li {
       color: black;
       font-style: italic; }
 
+/*Styles to be applied to the entire body*/
 body {
   background-color: #19C7FF;
-  background-image: url("../img/brick-wall-dark.png"); }
+  background-image: url("../img/brick-wall-dark.png");
+  /*Styles to be applied to the view container*/ }
   body div.viewContainer {
     background-image: url("../img/concrete_seamless.png");
     text-align: center;
     border-radius: 20px;
     margin-bottom: 100px;
     border: solid black 2px;
-    font-size: 1.2em; }
-    body div.viewContainer div.ng-scope div.htmlPage div.row div.row div.pageText div.row div.hide {
-      display: none; }
-    body div.viewContainer div.row div.bigPage {
-      text-align: left;
-      margin-left: 25px;
-      border-radius: 20px;
-      background-image: url("../img/concrete_seamless.png"); }
+    font-size: 1.2em;
+    /*Styling for the upper headers on the pages */
+    /*Styling for the content in the divs*/
+    /*Styling for the lower headers on he page*/
+    /*Styling for the example code in the pre tags*/ }
+    body div.viewContainer div.ng-scope div.htmlPage div.row div.row div.pageText div.row {
+      /*Any div with a class of hide will be hidden*/ }
+      body div.viewContainer div.ng-scope div.htmlPage div.row div.row div.pageText div.row div.hide {
+        display: none; }
+    body div.viewContainer div.row {
+      /*Styling for the pages without a navbar at the side of the container*/ }
+      body div.viewContainer div.row div.bigPage {
+        text-align: left;
+        margin-left: 25px;
+        border-radius: 20px;
+        background-image: url("../img/concrete_seamless.png"); }
     body div.viewContainer h2.homeHeader {
       margin: 20px;
       font-family: "Permanent Marker";

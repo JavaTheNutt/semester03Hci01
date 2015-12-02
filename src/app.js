@@ -3,27 +3,35 @@ var app = angular.module('myApp', [
 	'ui.router',
 	'ncy-angular-breadcrumb'
 ]);
-/*This config function applied to the app is part of the ui.router package and will handle routing,
- * this method of route configuration will allow experienced users to navigate directly to each
- * page without using the nav links*/
+/*This sets up the basic configuration for the website. It will tell each view which template should be shown and which controller should be
+ * used. It will also provide the labels and the inheritance for the breadcrumbs*/
 app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
+	/*This ensures that if an unrecognised URL is typed in, it will revert to the homepage*/
 	$urlRouterProvider.otherwise('/');
 	$stateProvider
+	/*Homepage*/
 		.state('home', {
+			/*URL for the homepage*/
 			url: '/',
+			/*Template for the homepage*/
 			templateUrl: 'partials/views/reference/home.html',
+			/*Breadcrumb setup*/
 			ncyBreadcrumb: {
+				/*Breadcrumb label*/
 				label: 'home'
 			}
 		})
+		/*First CSS page*/
 		.state('css', {
 			url: '/css',
 			templateUrl: 'partials/views/css/css.html',
 			ncyBreadcrumb: {
 				label: 'css',
+				/*Set up inheritance for this view(i.e. all pages are decedents of home)*/
 				parent: 'home'
 			}
 		})
+		/*First HTML page*/
 		.state('html', {
 			url: '/html',
 			templateUrl: 'partials/views/html/html.html',
@@ -32,6 +40,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'home'
 			}
 		})
+		/*About page*/
 		.state('about', {
 			url: '/about',
 			templateUrl: 'partials/views/reference/about.html',
@@ -40,14 +49,17 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'home'
 			}
 		})
+		/*Contact page*/
 		.state('contact', {
 			url: '/contact',
 			templateUrl: 'partials/views/reference/contact.html',
+			controller: 'ContactCtrl',
 			ncyBreadcrumb: {
 				label: 'contact',
 				parent: 'about'
 			}
 		})
+		/*References page*/
 		.state('references', {
 			url: '/references',
 			templateUrl: 'partials/views/reference/references.html',
@@ -56,6 +68,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'about'
 			}
 		})
+		/*HTML setup page*/
 		.state('html_setup', {
 			url: '/html/setup',
 			templateUrl: 'partials/views/html/html_setup.html',
@@ -64,6 +77,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'html'
 			}
 		})
+		/*HTML basics page*/
 		.state('basics', {
 			url: '/html/basics',
 			templateUrl: 'partials/views/html/basic_html.html',
@@ -73,6 +87,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'html'
 			}
 		})
+		/*HTML layout page*/
 		.state('layout', {
 			url: '/html/layout',
 			templateUrl: 'partials/views/html/html_layout.html',
@@ -81,6 +96,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'html'
 			}
 		})
+		/*HTML hyperlinks page*/
 		.state('hyper', {
 			url: '/html/hyperlinks',
 			templateUrl: 'partials/views/html/html_hyper.html',
@@ -90,6 +106,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'html'
 			}
 		})
+		/*HTML advanced page*/
 		.state('advanced', {
 			url: '/html/advanced',
 			templateUrl: 'partials/views/html/html_advanced.html',
@@ -98,6 +115,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'html'
 			}
 		})
+		/*CSS include page*/
 		.state('cssInclude', {
 			url: '/css/include',
 			templateUrl: 'partials/views/css/css_include.html',
@@ -106,6 +124,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'css'
 			}
 		})
+		/*CSS syntax page*/
 		.state('cssSyntax', {
 			url: '/css/syntax',
 			templateUrl: 'partials/views/css/css_syntax.html',
@@ -114,6 +133,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'css'
 			}
 		})
+		/*CSS selectors page*/
 		.state('cssSelectors', {
 			url: '/css/selectors',
 			templateUrl: 'partials/views/css/css_selectors.html',
@@ -122,6 +142,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'css'
 			}
 		})
+		/*CSS pseudo classes page*/
 		.state('cssPseudo', {
 			url: '/css/psuedo',
 			templateUrl: 'partials/views/css/css_pseudo.html',
@@ -131,6 +152,5 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 				parent: 'css'
 			}
 		})
-
 }]);
 

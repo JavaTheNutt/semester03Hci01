@@ -1,5 +1,7 @@
+/*This is the styling that is applied to most of the pages. It was origianlly intended to be used specifically for the html subsection of the
+site but it ended up being used for common rules used throughout the site*/
 div.htmlPage{
-  /*padding: 50px;*/
+  /*Set padding on page*/
   padding: 20px;
   div.row{
     /*This is the 6 column div with the content*/
@@ -10,13 +12,16 @@ div.htmlPage{
         color: $headerFontColor01;
         font-size: 2em;
       }
+	  /*Style smaller headers*/
       h4.underHeader{
         color: $headerFontColor01;
         text-align: left;
       }
+	  /*Style a pre tag*/
       pre.htmlExample{
         text-align: left;
       }
+	  /*Style the table on the HTML advanced page*/
       table.htmlAdvancedTable{
         width : 100%;
         background-color: white;

@@ -1,9 +1,12 @@
+<!--This is the view that will be shown when the user clicks the CSS selectors link on the css navbar-->
 <div class="htmlPage" ng-controller="SelectorsCssCtrl">
     <div class="row">
         <div class="bigPage col-sm-11">
+            <!--Link to breadcrumb-->
             <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
         </div>
     </div>
+    <!--Content-->
     <div class="row">
         <div class="pageText col-sm-7">
             <div class="row">
@@ -14,25 +17,28 @@
             </div>
             <div class="row">
                 <div>
+                    <!--These buttons will pass in the event to the toggleViews() function int the controller-->
                     <a class="btn btn-primary" ng-click="toggleViews($event)" id="showClass">Classes</a>
                     <a class="btn btn-primary" ng-click="toggleViews($event)" id="showId">Id's</a>
                 </div>
             </div>
 
             <div class="row">
+                <!--Classes <div>-->
                 <div id="cssClasses">
                     <h4 class="underHeader">Classes</h4>
-
                     <p>
                         Classes are added to HTML elements to ensure that when CSS styles are applied, they are only
                         applied to
                         the elements that also have the class applied. Consider the below HTML:
                     </p>
+                    <!--This is a code snippet that is formatted using JavaScript in the controller-->
                     <pre class="preCode">{{classes.pre01}}</pre>
                     <p>
                         Now we can select the &ltp&gt tag with the class added without selecting any p tags without the
                         class. This is done like this:
                     </p>
+                    <!--This a code snippet that is formatted using JavaScript in the controller-->
                     <pre class="preCode">{{classes.pre02}}</pre>
                     <p>
                         The above rules will set the color of any &ltp&gt tag to blue. Then it will specify that any
@@ -40,9 +46,11 @@
                         (notice p.para in the stylesheet) will be red. The button below will show you what happens when
                         you combine the html and css.
                     </p>
+                    <!--Link to example-->
                     <a class="btn btn-primary" href="/src/partials/examples/example04.html"
                        target="_blank">Example04</a>
                 </div>
+                <!--Ids <div>-->
                 <div id="cssIds" class="hide">
                     <h4 class="underHeader" >Id's</h4>
                     <p>
@@ -52,20 +60,24 @@
                         page. To use an id in
                         HTML, add the following code:
                     </p>
+                    <!--This a code snippet that is formatted using JavaScript in the controller-->
                     <pre class="preCode">{{ids.pre01}}</pre>
                     <p>
                         Notice how we used  id="para" instead of class="para". Below is an example of how to implement this code
                     </p>
+                    <!--This a code snippet that is formatted using JavaScript in the controller-->
                     <pre class="preCode">{{ids.pre02}}</pre>
                     <p>
                         The button below will show you what will happen if the HTML and CSS above are combined.
                     </p>
+                    <!--Link to example-->
                     <a class="btn btn-primary" href="/src/partials/examples/example05.html" target="_blank">Example 05</a>
                 </div>
             </div>
 
         </div>
         <div class="col-sm-3 col-sm-offset-1">
+            <!--Link to side navigation-->
             <div ng-include="'/src/partials/templates/cssNav.html'"></div>
         </div>
     </div>

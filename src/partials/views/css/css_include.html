@@ -1,10 +1,14 @@
+<!--This is the view that will be seen when the Include link is pressed on the css navbar. This class has a controller
+associated with it. That controller is the IncludeCSSControl-->
 <div class=" htmlPage" ng-controller="IncludeCssControl">
     <div class="row">
         <div class="bigPage col-sm-11">
+            <!--Link to the breadcrumb-->
             <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
         </div>
     </div>
     <div class="row">
+        <!--Content-->
         <div class="pageText col-sm-7">
 
             <h3 class="subHeader text-center">Including CSS</h3>
@@ -14,9 +18,13 @@
                 stylesheet, but
                 we will explain them all here.
             </p>
+            <!--This button will call the showInternal() function in the controller. This shows the associated <div> and hides the others-->
             <a class="btn btn-primary" ng-click="showInternal()">Show Internal</a>
+            <!--This button will call the showExternal() function in the controller. This shows the associated <div> and hides the others-->
             <a class="btn btn-primary" ng-click="showExternal()">Show External</a>
+            <!--This button will call the showInline() function in the controller. This shows the associated <div> and hides the others-->
             <a class="btn btn-primary" ng-click="showInline()">Show Inline</a>
+            <!--Inline content-->
             <div id="inlineCss">
                 <h4 class="underHeader">Inline Styling</h4>
                 <p>
@@ -27,8 +35,11 @@
                     be, if you wished to turn a paragraph red(remember our &ltp&gt tag!), you would write the tag as
                     follows:
                 </p>
+                <!--This is a code snippet. Since it is simplistic, it has been hardcoded in. The rest of the snippets are formatted in JavaScript
+                and placed in the tags using angular's mustache templating-->
                 <pre style="text-align: left">&ltp style="color:red"&gtSome text here&lt/p&gt</pre>
             </div>
+            <!--Internal content-->
             <div id="internalCss" class="hide">
                 <h4 class="underHeader">Internal Stylesheet</h4>
                 <p>
@@ -37,7 +48,12 @@
                     inline styling. To use an internal stylesheet in the head section of your page. Below is an example
                     of an internal stylesheet.
                 </p>
+                <!--This button will call the toggleCode() function in the controller. This either shows or hides the below code snippet
+                depending on its current state-->
                 <a class="btn-primary btn" ng-click="toggleCode()">Show Code</a>
+                <!--This is a code snippet that is formatted in JavaScript. In the controller there is an object defined as $scope.examples
+                This object has a variable called preText02 which is set to a JavaScript string. Angular allows variables to be displayed on screen in
+                the below fashion-->
                 <pre class="preCode hide" id="internalExample">{{examples.preText02}}</pre>
                 <p>
                     The above code would be written in the head tag and would set the font color of all paragraphs to
@@ -51,6 +67,7 @@
                     a file that ends with .css.
                     If you want to include the file just put the line below into the head section of the web page.
                 </p>
+                <!--This is the code snippet defined in the controller-->
                 <pre class="preCode">{{examples.preText01}}</pre>
                 <p>
                     In the above example, it is ok to use just the name of the css in the href attribute.
@@ -59,7 +76,9 @@
                 </p>
             </div>
         </div>
+        <!--This is navbar-->
         <div class="col-sm-3 col-sm-offset-1">
+            <!--Location of the navbar-->
             <div ng-include="'/src/partials/templates/cssNav.html'"></div>
         </div>
     </div>

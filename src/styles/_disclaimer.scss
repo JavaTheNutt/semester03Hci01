@@ -1,14 +1,17 @@
+/*This is the styling for the disclaimer modal*/
 div#disclaimer{
   font-size: 1.2em;
   div.modal-dialog{
     div.modal-content{
       div.modal-header{
+        /*Style header*/
         h4.modalHeader{
           font-family: "Permanent Marker", cursive;
           color: $headerFontColor01;
           font-size: 1.3em;
         }
       }
+	  /*Style body*/
       div.modal-body{
         p.modalText{
           font-family: "Amaranth", cursive;

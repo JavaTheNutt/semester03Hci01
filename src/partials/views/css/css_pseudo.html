@@ -1,9 +1,12 @@
+<!--This is the view that will be displayed when the pseudo link is clicked on the css navbar. Has an associated controller PseudoCtrl-->
 <div class="htmlPage">
     <div class="row">
         <div class="bigPage col-sm-11">
+            <!--Link to the breadcrumb-->
             <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
         </div>
     </div>
+    <!--Content-->
     <div class="row">
         <div class="pageText col-sm-7">
             <h3 class="subHeader text-center">Pseudo Classes</h3>
@@ -12,43 +15,58 @@
                 tag. When you hover over a hyperlink, usually something happens. This is because of the pseudo-class <em>hover</em> which is applied to
                 hyperlinks when they're hovered over.
             </p>
+            <!--These buttons will call the toggleViews() function defined in the controller. This controller passes in a parameter of the
+            event that took place. This can be used to determine the id of the button and therefore show or hide the correct <div>-->
             <a class="btn btn-primary" ng-click="toggleViews($event)" id="btnExp">Explanations</a>
             <a class="btn btn-primary" ng-click="toggleViews($event)" id="btnExm">Examples</a>
-            <div id="expl"><h4 class="underHeader">Hover</h4>
-            <p>
-                The hover pseudo-class is applied to an element when it is hovered over. To use the hover class in css, you would simply use the following code:
-            </p>
-            <pre class="preCode">{{examples.hoverExample}}</pre>
-            <h4 class="underHeader">Link</h4>
-            <p>
-                The link pseudo-class will apply a style to any link. This is used in the same way as the hover class. To use it, simply write
-                the following code:
-            </p>
-            <pre class="preCode">{{examples.linkExample}}</pre>
-            <h4 class="underHeader">Visited</h4>
-            <p>
-                The visited pseudo-class will style the link when it has been clicked. It is used like this:
-            </p>
-            <pre class="preCode">{{examples.visitedExample}}</pre>
-            <h4 class="underHeader">Active</h4>
-            <p>
-                The active pseudo-class will style a link while it's opened. It is applied like this:
-            </p>
-            <pre class="preCode">{{examples.activeExample}}</pre></div>
+            <!--Explanations view-->
+            <div id="expl">
+                <h4 class="underHeader">Hover</h4>
+                <p>
+                    The hover pseudo-class is applied to an element when it is hovered over. To use the hover class in css, you would simply use the following code:
+                </p>
+                <!--Code snippet defined in the controller-->
+                <pre class="preCode">{{examples.hoverExample}}</pre>
+                <h4 class="underHeader">Link</h4>
+                <p>
+                    The link pseudo-class will apply a style to any link. This is used in the same way as the hover class. To use it, simply write
+                    the following code:
+                </p>
+                <!--Code snippet defined in the controller-->
+                <pre class="preCode">{{examples.linkExample}}</pre>
+                <h4 class="underHeader">Visited</h4>
+                <p>
+                    The visited pseudo-class will style the link when it has been clicked. It is used like this:
+                </p>
+                <!--Code snippet defined in the controller-->
+                <pre class="preCode">{{examples.visitedExample}}</pre>
+                <h4 class="underHeader">Active</h4>
+                <p>
+                    The active pseudo-class will style a link while it's opened. It is applied like this:
+                </p>
+                <!--Code snippet defined in the controller-->
+                <pre class="preCode">{{examples.activeExample}}</pre>
+            </div>
+            <!--Examples <div>-->
             <div id="exm" class="hide">
                 <h4 class="underHeader">Example</h4>
                 <p>
                     Below is the the code that was explained on the previous page.
                 </p>
+                <!--Code snippet defined in the controller-->
                 <pre class="preCode">{{examples.hoverExample}}<br>{{examples.linkExample}}<br>{{examples.visitedExample}}<br>{{examples.activeExample}}</pre>
                 <p>
                     The button below shows what happens when the above CSS is applied to the below HTML
                 </p>
+                <!--Code snippet defined in the controller-->
                 <pre class="preCode">{{examples.htmlExample}}</pre>
+                <!--Link to example-->
                 <a class="btn btn-primary" href="/src/partials/examples/example06.html" target="_blank">Example06</a>
             </div>
         </div>
+        <!--Navbar-->
         <div class="col-sm-3 col-sm-offset-1">
+            <!--Link to the navabar-->
             <div ng-include="'/src/partials/templates/cssNav.html'"></div>
         </div>
     </div>

@@ -1,19 +1,23 @@
+/*This is the styling for the contact form*/
 div.viewContainer{
   div.container{
     div.row{
       div.col-md-6{
         form#contactForm{
           div.form-group{
+            /*set the font family for the control label to be the same as the page font*/
             label.control-label{
               font-family: $pageFont;
             }
             div.col-sm-9{
+			  /*Style for invalid email*/
               input#emailInput.contactFormInvalid{
                 border-color: red;
               }
             }
             div#textareaDiv{
               textarea#messageInput{
+				/*Only allow vertical resize of textarea*/
                 resize: vertical;
               }
             }
@@ -21,6 +25,7 @@ div.viewContainer{
         }
       }
       div.col-md-5{
+		/*Style text beside the form*/
         p.textBesideForm{
           font-family: $pageFont;
           font-size: $pageFontSize;

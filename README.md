@@ -1,1 +1,1 @@
-Basic website
+This is the website created for my Semester Three, Human Computer Interaction Module. This is a basic site built using Angularjs. The premise of the site is teaching primary school aged children about the basics of HTML and CSS.

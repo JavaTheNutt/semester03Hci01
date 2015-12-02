@@ -1,18 +1,24 @@
+/*This is the styling for the jumbotron at the top of each page*/
 div.jumbotron{
+  /*These rules are applied to the entire jumbotron*/
   font-family: $jumboFont01;
   text-align: center;
   background-image: url("../img/concrete_seamless.png");
   background-color: white;
   padding: 5px;
   border: solid black 2px;
+  /*This is the styling for the tagline on the jumbotron*/
   p.jumboSubtitle{
-    /*text-align: right;*/
     font-size: 2em;
   }
+  /*This is the styling for the actual kidcode text*/
   h1.jumboHeader{
+	/*Enlarge the font*/
     font-size: $jumboFontSize;
+	/*Put a 2px thick shadow around each letter*/
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-    /*text-align: left;*/
+	/*These seven spans represent each letter in the title. Most of them have two rules with one commented out. This is because I left the
+	rules for the most popular alternate color scheme*/
     span#jumboRed{
       color: red;
     }

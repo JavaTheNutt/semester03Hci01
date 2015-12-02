@@ -1,10 +1,13 @@
+<!--This is the view that will be shown when the hypertext link is clicked on the HTML navbar. This view has an associated controller, HyperlinkHtmlCtrl-->
 <div class="htmlPage">
     <div class="row">
         <div class="bigPage col-sm-11">
+            <!--Link to the breadcrumb-->
             <div ng-include="'/src/partials/templates/breadcrumb.html'"></div>
         </div>
     </div>
     <div class="row">
+        <!--Content-->
         <div class="pageText col-sm-7">
             <h3 class="subHeader text-center">Hyperlinks</h3>
 
@@ -20,6 +23,7 @@
                 site.
                 They open up pages because they are &lta&gt tags!
             </p>
+            <!--This a code snippet that is formatted using JavaScript in the controller-->
             <pre class="preCode">{{examples.aTag}}</pre>
             <p>
                 The above code is an example of an &lta&gt tag. The href attribute is the <em>hyperlink reference</em> and is the <em>URL</em>
@@ -28,6 +32,7 @@
             </p>
         </div>
         <div class="col-sm-3 col-sm-offset-1">
+            <!--Link to side navbar-->
             <div ng-include="'/src/partials/templates/htmlNav.html'"></div>
         </div>
     </div>
